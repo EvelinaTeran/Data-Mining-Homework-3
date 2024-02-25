@@ -8,58 +8,58 @@ def question1():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Agglomerative consider pairwise distances between points which makes it less sensitive to outliers than k-means."
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "For k-means, where the centroids start can lead to differet outcomes but since agglomerative hierarchical clustering are deterministic algorithms which result in the same clustering for every run."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "k-means can be efficient in certain situations but we can't make the blanket statement that it is the most efficient clustering algorithm."
 
     # type: bool (True/False)
-    answers["(d)"] = -1
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = ""
+    answers["(d) explain"] = "For k-means each centroid is adjusted based on the mean of the points assigned to it and the points are reassigned to the nearest centroid."
 
     # type: bool (True/False)
-    answers["(e)"] = -1
+    answers["(e)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "When SSE decreases this indicates that the points within the clusters are getting closer to tge centroids which leads to an increased cohesion within the clusters."
 
     # type: bool (True/False)
-    answers["(f)"] = -1
+    answers["(f)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = ""
+    answers["(f) explain"] = "An increase in SSb implies that the clusters are further apart from each other, leading to greater separation between clusters."
 
     # type: bool (True/False)
-    answers["(g)"] = -1
+    answers["(g)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = ""
+    answers["(g) explain"] = "Cohesion and separation are independent in k-means clustering because cohesion focuses on minimizing te within-cluster variation while separation focuses on maximiazing the between-cluster variation."
 
     # type: bool (True/False)
-    answers["(h)"] = -1
+    answers["(h)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = ""
+    answers["(h) explain"] = "Both this values can change as the centroids and cluster assignments are updated during each iteration of the clustering algorithm."
 
     # type: bool (True/False)
-    answers["(i)"] = -1
+    answers["(i)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = ""
+    answers["(i) explain"] = "Cohesion and separation are independent metrics so increasing one does not guarantee an increase in the other."
 
     return answers
 
@@ -233,10 +233,10 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The cluster with the largest clustering entropy will have the most diverse distribution of land cover types so I think Cluster 4 because it looks it has a more evenly distributed representation of different land cover types compared to the other clusters."
 
     # type: string
     answers["(b)"] = ""
