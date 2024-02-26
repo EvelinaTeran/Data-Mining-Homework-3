@@ -239,10 +239,10 @@ def question7():
     answers["(a) explain"] = "The cluster with the largest clustering entropy will have the most diverse distribution of land cover types so I think Cluster 4 because it looks it has a more evenly distributed representation of different land cover types compared to the other clusters."
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 2"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The cluster with the smallest entropy will will have a more uniform distribution of land cover types and cluster 2 appears to have the most uniform distribution."
 
     return answers
 
@@ -314,22 +314,22 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = []
+    answers["(a)"] = ["hierarchical", "overlapping", "partial"]
 
     # type: list
-    answers["(b)"] = []
+    answers["(b)"] = ["partitional", "exclusive", "complete"]
 
     # type: list
-    answers["(c)"] = []
+    answers["(c)"] = ["partitional", "exclusive", "complete"]
 
     # type: list
-    answers["(d)"] = []
+    answers["(d)"] = ["hierarchical", "overlapping", "partial"]
 
     # type: list
-    answers["(e)"] = []
+    answers["(e)"] = ["partitional", "exclusive", "complete"]
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "Answer c might also be overlapping or fuzzy since the international grads might have overlapping roles or multiple jobs which would allow them to be clustered into multiple job categories. For this example, I assumed each student would only have one job which is why I put exclusive."
 
     return answers
 
