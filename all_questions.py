@@ -360,7 +360,7 @@ def question10():
     answers["(b) explain"] = ""
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "Take the reciprocal of the density as the new density and use DBSCAN."
 
     return answers
 
