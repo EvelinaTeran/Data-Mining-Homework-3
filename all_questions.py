@@ -44,21 +44,24 @@ def question1():
     answers["(f) explain"] = "An increase in SSb implies that the clusters are further apart from each other, leading to greater separation between clusters."
 
     # type: bool (True/False)
-    answers["(g)"] = True
+    answers["(g)"] = False
 
     # type: explanatory string (at least four words)
+    # Add a different explanation
     answers["(g) explain"] = "Cohesion and separation are independent in k-means clustering because cohesion focuses on minimizing te within-cluster variation while separation focuses on maximiazing the between-cluster variation."
 
     # type: bool (True/False)
-    answers["(h)"] = False
+    answers["(h)"] = True
 
     # type: explanatory string (at least four words)
+    # Add a different explaination
     answers["(h) explain"] = "Both this values can change as the centroids and cluster assignments are updated during each iteration of the clustering algorithm."
 
     # type: bool (True/False)
-    answers["(i)"] = False
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
+    # Add a different explanation
     answers["(i) explain"] = "Cohesion and separation are independent metrics so increasing one does not guarantee an increase in the other."
 
     return answers
@@ -71,19 +74,19 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = ""
@@ -98,13 +101,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 7.5
+    answers["(a) SSE"] = "4 * R**2"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = 7.5
+    answers["(b) SSE"] = "4 * (a**2 + b**2 + c**2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 7.5
+    answers["(c) SSE"] = "4*(R**2 + (R/2)**2)"
 
     return answers
 
@@ -116,25 +119,25 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
@@ -146,7 +149,7 @@ def question4():
     answers["(c) Circle (b)"] = 0
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = ""
@@ -161,13 +164,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = set('Group B', 'Group A')
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = set('Group C', 'Group A')
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
@@ -182,19 +185,19 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = set('I', 'J', 'E', 'F', 'C', 'L', 'M', 'B')
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = set('G', 'D')
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = set('A', 'H')
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = set('E', 'F', 'C', 'B', 'G', 'D')
 
     # type: set
-    answers["(b) cluster 2"] = set()
+    answers["(b) cluster 2"] = set('M', 'I', 'J', 'L')
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -203,19 +206,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = set('I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'B')
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = set('A', 'H')
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = set('H', 'I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'A', 'B')
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] = set('A')
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -233,11 +236,11 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = "Cluster 4"
+    answers["(a)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "The cluster with the largest clustering entropy will have the most diverse distribution of land cover types so I think Cluster 4 because it looks it has a more evenly distributed representation of different land cover types compared to the other clusters."
-
+    answers["(a) explain"] = ""
+    
     # type: string
     answers["(b)"] = "Cluster 2"
 
@@ -254,7 +257,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -263,7 +266,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -272,7 +275,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
@@ -281,16 +284,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster A"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster B"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster C"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -314,23 +317,22 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = ["hierarchical", "overlapping", "partial"]
+    answers["(a)"] = ["Hierarchical", "overlapping", "partial"]
 
     # type: list
-    answers["(b)"] = ["partitional", "exclusive", "complete"]
+    answers["(b)"] = ["Partitional", "exclusive", "complete"]
 
     # type: list
-    answers["(c)"] = ["partitional", "exclusive", "complete"]
+    answers["(c)"] = ["Partitional", "fuzzy", "complete"]
 
     # type: list
-    answers["(d)"] = ["hierarchical", "overlapping", "partial"]
+    answers["(d)"] = ["Hierarchical", "overlapping", "partial"]
 
     # type: list
-    answers["(e)"] = ["partitional", "exclusive", "complete"]
+    answers["(e)"] = ["Partitional", "Exclusive", "partial"]
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "Answer c might also be overlapping or fuzzy since the international grads might have overlapping roles or multiple jobs which would allow them to be clustered into multiple job categories. For this example, I assumed each student would only have one job which is why I put exclusive."
-
+    answers["(e) explain"] = "partial because some student may not receive a grade in the class if they get an I for Incomplete."
     return answers
 
 
@@ -341,19 +343,19 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "no"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "no"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
