@@ -164,13 +164,13 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set('Group B', 'Group A')
+    answers["(a)"] = set({'Group B', 'Group A'})
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
 
     # type: set
-    answers["(b)"] = set('Group C', 'Group A')
+    answers["(b)"] = set({'Group C', 'Group A'})
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = ""
@@ -185,19 +185,19 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set('I', 'J', 'E', 'F', 'C', 'L', 'M', 'B')
+    answers["(a) core"] = set({'I', 'J', 'E', 'F', 'C', 'L', 'M', 'B'})
 
     # type: set
-    answers["(a) boundary"] = set('G', 'D')
+    answers["(a) boundary"] = set({'G', 'D'})
 
     # type: set
-    answers["(a) noise"] = set('A', 'H')
+    answers["(a) noise"] = set({'A', 'H'})
 
     # type: set
-    answers["(b) cluster 1"] = set('E', 'F', 'C', 'B', 'G', 'D')
+    answers["(b) cluster 1"] = set({'E', 'F', 'C', 'B', 'G', 'D'})
 
     # type: set
-    answers["(b) cluster 2"] = set('M', 'I', 'J', 'L')
+    answers["(b) cluster 2"] = set({'M', 'I', 'J', 'L'})
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -206,16 +206,16 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set('I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'B')
+    answers["(c)-a core"] = set({'I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'B'})
 
     # type: set
-    answers["(c)-a boundary"] = set('A', 'H')
+    answers["(c)-a boundary"] = set({'A', 'H'})
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set('H', 'I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'A', 'B')
+    answers["(c)-b cluster 1"] = set({'H', 'I', 'J', 'E', 'F', 'C', 'L', 'M', 'G', 'D', 'A', 'B'})
 
     # type: set
     answers["(c)-b cluster 2"] = set('A')
@@ -236,17 +236,16 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = "Cluster 1"
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = ""
     
     # type: string
-    answers["(b)"] = "Cluster 2"
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The cluster with the smallest entropy will will have a more uniform distribution of land cover types and cluster 2 appears to have the most uniform distribution."
-
+    answers["(b) explain"] = ""
     return answers
 
 
