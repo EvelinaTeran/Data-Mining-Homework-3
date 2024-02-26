@@ -47,22 +47,19 @@ def question1():
     answers["(g)"] = False
 
     # type: explanatory string (at least four words)
-    # Add a different explanation
-    answers["(g) explain"] = "Cohesion and separation are independent in k-means clustering because cohesion focuses on minimizing te within-cluster variation while separation focuses on maximiazing the between-cluster variation."
-
+    answers["(g) explain"] = "Improving cohesion typically involves minimizing within-in cluster variation which indirectly leads to increased separation."
+    
     # type: bool (True/False)
     answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    # Add a different explaination
-    answers["(h) explain"] = "Both this values can change as the centroids and cluster assignments are updated during each iteration of the clustering algorithm."
-
+    answers["(h) explain"] = "The sum of SSE and BSS remain constant throughout the clustering process since they represent the total variability of the dataset."
+    
     # type: bool (True/False)
     answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    # Add a different explanation
-    answers["(i) explain"] = "Cohesion and separation are independent metrics so increasing one does not guarantee an increase in the other."
+    answers["(i) explain"] = "Improving cohesion typically involves minimizing within-in cluster variation which indirectly leads to increased separation."
 
     return answers
 
@@ -77,19 +74,19 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Because the distance d between the shaded circles is bigger than the radius of the circles, the 2 centroids will be at the center of eac shaded circle."
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The odd shape of the shaded regions will have an effect on the clustering and since k-means works best for circular clusters, it will likely split the 2 shapes into 2 circles so the clusters will have points from both shaded regions instead of separating them."
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "The center centroid will result in an empty cluster."
 
     return answers
 
@@ -128,7 +125,7 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Since the centroids are initialized in B, when you apply k-means it will move one towards C and one towards A until you have a centroid in A, B, and C."
 
     # type: int
     answers["(b) Circle (a)"] = 1
@@ -140,7 +137,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The centroid in A will stay but one of the centroids in B will feel pulled to the center of C so you get a centroid in each circle."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -152,7 +149,7 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "The centroids in C will stay there since C has many more points than A and B combined. The centroid in A will be pulled twoards C but not all the way therefore, the A and B circles will not contain a centroid but circle will contain 2."
 
     return answers
 
@@ -167,13 +164,13 @@ def question5():
     answers["(a)"] = set({'Group B', 'Group A'})
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Because the proximity of group A and B based off their 2 closest points is smaller than the priximity when using group c."
 
     # type: set
     answers["(b)"] = set({'Group C', 'Group A'})
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Because the proximity of group A and B based off their 2 most distance points is smaller than when comparing proximity with group b."
 
     return answers
 
@@ -239,13 +236,13 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The cluster with the largest clustering entropy will have the most diverse distribution of land cover types and Cluster 4 appears to have the most diverse distribution"
     
     # type: string
     answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Since 30000/30150 of the objects are classified as water, this indicates a high degree of certainty within the cluster so there is little variability which indicates a lower entropy."
     return answers
 
 
@@ -348,7 +345,7 @@ def question10():
     answers["(a) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Figure a has very high density which is a problem for DBSCAN. However, figure b does not have high density so DBSCAN can handle this better."
 
     # type: string
     answers["(b) Figure (a)"] = "no"
@@ -357,7 +354,7 @@ def question10():
     answers["(b) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Applying k-means for figure a would likely result in one big cluster since it won't be able to separate out the eyes, nose and mouth because of the density of points outside of those areas. However, for figure b k-means will work well especially since the eyes and nose are circular clusters."
 
     # type: string
     answers["(c)"] = "Take the reciprocal of the density as the new density and use DBSCAN."
