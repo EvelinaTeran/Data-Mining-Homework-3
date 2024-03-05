@@ -256,28 +256,28 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "indicate clusters spanning the range of the y axis in the z dataset"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "the spreading of some dark blue and light blue in the top left region indicate multiple clusters at the same level in y"
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "the spread of the blue across the diagonal entries indicates clusters along the diagonal in the dataset"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "red in the far right top non-diag and far left bottom non-diag entries indicate there is no clustering in this region"
 
     # type: string
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "dark blue diags indicated strong tight clustering and the slightly lighter dark blue entries show clustering but less compact"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain non-diag entries, Matrix 3"] = "light blue region indicates more spread out clustering"
 
     # type: string
     answers["(b) Row 1"] = "Cluster A"
@@ -292,16 +292,16 @@ def question8():
     answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = ""
+    answers["(b) Row 1 explain"] = "red in the right indicates no clustering there and blue in the left indicates thats where the cluster is located"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = ""
+    answers["(b) Row 2 explain"] = "distinct dark blue in second square of this row indicates strong clustering"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = ""
+    answers["(b) Row 3 explain"] = "distinct dark blue in the third square of this row indicates strong clustering"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = ""
+    answers["(b) Row 4 explain"] = "red in the left most square of this row indicates no clustering there and blue in the right most square indicates the clustering should be there"
 
     return answers
 
